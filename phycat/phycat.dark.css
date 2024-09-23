@@ -1492,28 +1492,6 @@ mark {
   margin-top: 10px; /* 上边距 */
 }
 
-/* ------------------------------------------------------------------------------------------ */
-
-
-/* 侧边栏大纲 - H2 前景样式 */
-
-#outline-content .outline-h2 > .outline-item::before {
-  content: ""; /* 伪元素内容 */
-  width: 10px; /* 圆点宽度 */
-  height: 10px; /* 圆点高度 */
-  background: var(--element-color); /* 圆点背景颜色 */
-  vertical-align: middle; /* 垂直对齐 */
-  float: left; /* 浮动方向 */
-  margin-top: 0px; /* 上边距 */
-  margin-right: 17px; /* 右边距 */
-  margin-left: -23px; /* 左边距 */
-  border-radius: 100%; /* 圆点圆角 */
-  border: 3px solid #fff; /* 圆点边框 */
-  z-index: 100; /* 层级 */
-  position: relative; /* 相对定位 */
-  top: 8px; /* 顶部偏移 */
-  left: 7.5px; /* 左侧偏移 */
-}
 
 
 /* ------------------------------------------------------------------------------------------ */
@@ -1523,12 +1501,12 @@ mark {
 
 #outline-content .outline-h2::after {
   content: ""; /* 伪元素内容 */
-  height: calc(100% - 24px); /* 高度计算 */
-  width: 1px; /* 线宽 */
+  height: calc(100% - 20px); /* 高度计算 */
+  width: 2px; /* 线宽 */
   background: var(--element-color); /* 线颜色 */
   position: absolute; /* 绝对定位 */
   left: 3px; /* 左侧位置 */
-  top: 21px; /* 顶部位置 */
+  top: 14px; /* 顶部位置 */
 }
 
 
@@ -1738,44 +1716,6 @@ body.typora-export {
 }
 
 
-/* ------------------------------------------------------------------------------------------ */
-
-
-/* 目录中二级标题前的标记样式 */
-
-.outline-content .outline-h2 > .outline-item::before {
-  content: ""; /* 空内容用于显示标记 */
-  width: 12px; /* 标记宽度 */
-  height: 12px; /* 标记高度 */
-  background: var(--element-color-deep); /* 设置标记背景颜色 */
-  vertical-align: middle; /* 垂直对齐中间 */
-  float: left; /* 使标记浮动到左侧 */
-  margin-top: -2px; /* 上边距调整位置 */
-  margin-right: 11px; /* 右边距调整位置 */
-  margin-left: -24px; /* 左边距调整位置 */
-  border-radius: 100%; /* 设置为圆形 */
-  border: 3px solid #fff; /* 添加白色边框 */
-  z-index: 100; /* 设置层叠顺序 */
-  position: relative; /* 相对定位 */
-  top: 8px; /* 从顶部开始的距离 */
-  left: 8px; /* 从左边缘开始的距离 */
-}
-
-
-/* ------------------------------------------------------------------------------------------ */
-
-
-/* 目录中二级标题下的分隔线样式 */
-
-.outline-content .outline-h2::after {
-  content: ""; /* 空内容用于显示分隔线 */
-  height: calc(100% - 24px); /* 计算分隔线的高度，减去上下边距 */
-  width: 1px; /* 设置分隔线宽度 */
-  background: var(--element-color); /* 设置分隔线背景颜色 */
-  position: absolute; /* 绝对定位以控制位置 */
-  left: 3px; /* 从左边缘开始的距离 */
-  top: 21px; /* 从顶部开始的距离 */
-}
 
 
 /* ------------------------------------------------------------------------------------------ */
